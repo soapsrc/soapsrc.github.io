@@ -1,1 +1,5 @@
-sophware.io
+sophware.app
+sophware.net
+sophiecodes.io
+sophiecodes.app
+sophiecodes.net
