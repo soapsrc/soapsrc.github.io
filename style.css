@@ -1,3 +1,14 @@
+:root {
+    --white-c: #fff;
+    --black-c: #000;
+    --buttons-background-c: rgba(255, 255, 255, 0.219);
+    --buttons-active-background-c: rgba(135, 207, 235, 0.493);
+    --main-c: #E5D9FC;
+    --main2-c: #FDD8EA;
+    --accent-c: #9968f3;
+    --accent2-c: #bbf1f9;
+}
+
 ::-webkit-scrollbar {
     width: 7px;
 }
@@ -140,8 +151,8 @@ u {
     background-image: url('assets/pinklav.png');
     background-repeat: repeat-x;
     background-size: auto 40%;
-    width: 110vh;
-    height: 90vh;
+    width: 77rem;
+    height: 62rem;
     border-radius: 5%;
     align-items: center;
     text-align: center;
@@ -166,6 +177,8 @@ input[type=color] {
 }
 
 .header {
+    display: flex;
+    flex-direction: row;
     padding: 0rem;
     align-items: center;
     text-align: center;
@@ -173,9 +186,24 @@ input[type=color] {
     flex-flow: column wrap;
     background-image: url('assets/wallpaper.jpeg');
     background-size: cover;
-    width: 110vh;
-    height: 90vh;
+    width: 77rem;
+    height: 62rem;
     border-radius: 5%;
+}
+
+.header-align {
+    width: 90%;
+}
+
+.row1 {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 3px;
+}
+
+.row3 {
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 .widget {
@@ -234,36 +262,21 @@ input[type=color] {
 }
 
 .w6 {
-    background-image: url('assets/resume.JPEG');
-    background-size: cover;
-    border: 5px solid #f5e9e4;
-    color: white;
-    font-family: Karla;
-    font-size: 2.5rem;
-    text-align: center;
-    padding: 2.2rem 1.7rem;
+    background-image: url('assets/resume.jpeg');
+    background-size: 14rem auto;
+    border: 5px solid #f4a58a;
 }
 
 .w7 {
     background-image: url('assets/project.JPEG');
-    background-size: cover;
-    border: 5px solid #f5e9e4;
-    color: white;
-    font-family: Karla;
-    font-size: 2.5rem;
-    text-align: center;
-    padding: 2.2rem 1.7rem;
+    background-size: 14rem auto;
+    border: 5px solid #f4a58a;
 }
 
 .w8 {
     background-image: url('assets/email.JPEG');
-    background-size: cover;
-    border: 5px solid #f5e9e4;
-    color: white;
-    font-family: Karla;
-    font-size: 2.5rem;
-    text-align: center;
-    padding: 2.2rem 1.7rem;
+    background-size: 14rem auto;
+    border: 5px solid #f4a58a;
 }
 
 .w2:hover,
@@ -368,6 +381,14 @@ form {
     padding-top: 8rem;
 }
 
+.center-vertically {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 
 /* The Close Button (x) */
 
@@ -391,8 +412,8 @@ form {
     background-image: url('assets/pinklav.png');
     background-repeat: repeat-x;
     background-size: auto 40%;
-    width: 110vh;
-    height: 90vh;
+    width: 77rem;
+    height: 62rem;
     border-radius: 5%;
     align-items: center;
     text-align: center;
@@ -446,4 +467,21 @@ form {
     font-size: 16px;
     padding: 13px;
     width: 15rem;
+}
+
+.projects-container {
+    background-color: white;
+    background-image: url('assets/pinklav.png');
+    background-repeat: repeat-x;
+    background-size: auto 40%;
+    width: 77rem;
+    height: 62rem;
+    border-radius: 5%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    display: none;
+    position: fixed;
+    z-index: 3;
 }

@@ -59,6 +59,9 @@ $("button").click(function() {
         case 11:
             document.getElementById('resume-container').style.display = 'block';
             break;
+        case 12:
+            document.getElementById('projects-container').style.display = 'block';
+            break;
         case 0:
             document.getElementById('login-container').style.display = 'block';
             break;

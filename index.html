@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/d663473e0e.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/png" href="./assets/images/icon.gif">
+    <link rel="icon" type="image/png" href="assets/icon.png">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Work+Sans&display=swap" rel="stylesheet">
@@ -35,38 +35,48 @@
 
     <div class="pre">
 
-        <div class="header float-container">
-            <div div class="widget w1 float-child">
-                <h1 class="title">soapsrc</h1>
-            </div>
-            <div div class="widget w4 float-child ">
-                Combining creativity with code.
-            </div>
-            <div div class="widget w2 float-child">
-                <span class="tooltip" title="SoapChat">
-                    <span class="dot">4</span>
-                <button value="0" id="0" class="icon-button" onclick="document.getElementById('login-container').style.display='block'"></button>
-                </span>
-            </div>
-            <div div class="widget w3 float-child">
-            </div>
-            <div div class="widget w6 float-child">
-                <button value="11" id="11" class="icon-button" onclick="document.getElementById('resume-container').style.display='block'"></button>
-            </div>
-            <div div class="widget w7 float-child">
-                <button value="11" id="11" class="icon-button" onclick="document.getElementById('resume-container').style.display='block'"></button>
-            </div>
-            <div div class="widget w8 float-child">
-                <button value="11" id="11" class="icon-button" onclick="document.getElementById('resume-container').style.display='block'"></button>
-            </div>
-            <div div class="widget w5 float-child">
-                <div id="time" style="text-align:center;">
-                    <div class="date">
-                        <span class="day">{{this.day}}</span>
-                        <span class="date">{{this.date}}</span>
+        <div class="header">
+            <div class="header-align">
+                <div class="row1">
+                    <div class="widget w1 float-child">
+                        <h1 class="title">soapsrc</h1>
                     </div>
-                    <div class="time">
-                        <span class="time">{{this.time}}</span>
+                </div>
+                <div div class="widget w4 float-child ">
+                    Combining creativity with code.
+                </div>
+                <div div class="widget w2 float-child">
+                    <span class="tooltip" title="SoapChat">
+                    <span class="dot">4</span>
+                    <button value="0" id="0" class="icon-button" onclick="document.getElementById('login-container').style.display='block'"></button>
+                    </span>
+                </div>
+                <div div class="widget w3 float-child"><span class="tooltip" title="About Me"></span>
+                </div>
+                <div div class="widget w6 float-child">
+                    <span class="tooltip" title="Resume">
+                    <button value="11" id="11" class="icon-button" onclick="document.getElementById('resume-container').style.display='block'"></button>
+                </span>
+                </div>
+                <div div class="widget w7 float-child">
+                    <span class="tooltip" title="Projects">
+                <button value="12" id="12" class="icon-button" onclick="document.getElementById('projects-container').style.display='block'"></button>
+            </span>
+                </div>
+                <div div class="widget w8 float-child">
+                    <span class="tooltip" title="Contact me">
+                <button value="11" id="11" class="icon-button" onclick="document.getElementById('resume-container').style.display='block'"></button>
+            </span>
+                </div>
+                <div div class="widget w5 float-child">
+                    <div id="time" style="text-align:center;">
+                        <div class="date">
+                            <span class="day">{{this.day}}</span>
+                            <span class="date">{{this.date}}</span>
+                        </div>
+                        <div class="time">
+                            <span class="time">{{this.time}}</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -103,6 +113,16 @@
             <object data="assets/resume.pdf" type="application/pdf" width="87%" height="95%">
             </object><br>
             <a href="assets/resume.pdf">View in full screen.</a>
+        </div>
+        <div class="projects-container animate" id="projects-container">
+            <span onclick="document.getElementById('projects-container').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <div class="center-vertically">
+                <ul>
+                    <li><a href="https://soapsrc.github.io/Kirby-Button-Report/">The Kirby Button - Human Computer Interactions Project</a></li>
+                    <li><a href="https://soapsrc.github.io/STEM-Grads-by-Gender/">STEM Grads by Gender - Information Visualization Project</a></li>
+                </ul>
+                ** This portfolio site is still under construction! **
+            </div>
         </div>
     </div>
 
