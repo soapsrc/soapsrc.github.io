@@ -27,34 +27,34 @@ $("button").click(function() {
 
     switch (val) {
         case 1:
-            document.getElementById("avatar").style.background = "url('kirby.png')";
+            document.getElementById("avatar").style.background = "url('assets/kirby.png')";
             break;
         case 2:
-            document.getElementById("avatar").style.background = "url('kingdede.gif')";
+            document.getElementById("avatar").style.background = "url('assets/kingdede.gif')";
             break;
         case 3:
-            document.getElementById("avatar").style.background = "url('metaknight.gif')";
+            document.getElementById("avatar").style.background = "url('assets/metaknight.gif')";
             break;
         case 4:
-            document.getElementById("avatar").style.background = "url('mario.gif')";
+            document.getElementById("avatar").style.background = "url('assets/mario.gif')";
             break;
         case 5:
-            document.getElementById("avatar").style.background = "url('bowser.gif')";
+            document.getElementById("avatar").style.background = "url('assets/bowser.gif')";
             break;
         case 6:
-            document.getElementById("avatar").style.background = "url('daisy.gif')";
+            document.getElementById("avatar").style.background = "url('assets/daisy.gif')";
             break;
         case 7:
-            document.getElementById("avatar").style.background = "url('sonic.png')";
+            document.getElementById("avatar").style.background = "url('assets/sonic.png')";
             break;
         case 8:
-            document.getElementById("avatar").style.background = "url('pikachu.png')";
+            document.getElementById("avatar").style.background = "url('assets/pikachu.png')";
             break;
         case 9:
-            document.getElementById("avatar").style.background = "url('gengar.png')";
+            document.getElementById("avatar").style.background = "url('assets/gengar.png')";
             break;
         case 10:
-            document.getElementById("avatar").style.background = "url('jira.png')";
+            document.getElementById("avatar").style.background = "url('assets/jira.png')";
             break;
         case 11:
             document.getElementById('resume-container').style.display = 'block';
@@ -63,7 +63,7 @@ $("button").click(function() {
             document.getElementById('login-container').style.display = 'block';
             break;
         default:
-            document.getElementById("avatar").style.background = "url('mariosmushroom.png')";
+            document.getElementById("avatar").style.background = "url('assets/mariosmushroom.png')";
     }
 
     document.getElementById("avatar").style.backgroundRepeat = "no-repeat";

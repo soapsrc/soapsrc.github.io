@@ -137,7 +137,7 @@ u {
 
 .login-container {
     background-color: white;
-    background-image: url('pinklav.png');
+    background-image: url('assets/pinklav.png');
     background-repeat: repeat-x;
     background-size: auto 40%;
     width: 110vh;
@@ -171,7 +171,7 @@ input[type=color] {
     text-align: center;
     justify-content: center;
     flex-flow: column wrap;
-    background-image: url('wallpaper.jpeg');
+    background-image: url('assets/wallpaper.jpeg');
     background-size: cover;
     width: 110vh;
     height: 90vh;
@@ -197,13 +197,13 @@ input[type=color] {
 }
 
 .w2 {
-    background-image: url('ghost.jpeg');
+    background-image: url('assets/snapchat.jpeg');
     background-size: 14rem auto;
     border: 5px solid #f4a58a;
 }
 
 .w3 {
-    background-image: url('me.jpeg');
+    background-image: url('assets/me.jpeg');
     background-size: 15rem auto;
     border: 5px solid #f4a58a;
 }
@@ -222,7 +222,7 @@ input[type=color] {
 }
 
 .w5 {
-    background-image: url('timebg.jpeg');
+    background-image: url('assets/timebg.jpeg');
     background-size: cover;
     border: 5px solid #f5e9e4;
     color: white;
@@ -234,7 +234,7 @@ input[type=color] {
 }
 
 .w6 {
-    background-image: url('resume.JPEG');
+    background-image: url('assets/resume.JPEG');
     background-size: cover;
     border: 5px solid #f5e9e4;
     color: white;
@@ -245,7 +245,7 @@ input[type=color] {
 }
 
 .w7 {
-    background-image: url('briefcase.JPEG');
+    background-image: url('assets/project.JPEG');
     background-size: cover;
     border: 5px solid #f5e9e4;
     color: white;
@@ -256,7 +256,7 @@ input[type=color] {
 }
 
 .w8 {
-    background-image: url('email.JPEG');
+    background-image: url('assets/email.JPEG');
     background-size: cover;
     border: 5px solid #f5e9e4;
     color: white;
@@ -299,7 +299,7 @@ input[type=color] {
 }
 
 #avatar {
-    background: url(kirby.png);
+    background: url(assets/kirby.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #FED7DA;
@@ -388,7 +388,7 @@ form {
 
 .resume-container {
     background-color: white;
-    background-image: url('pinklav.png');
+    background-image: url('assets/pinklav.png');
     background-repeat: repeat-x;
     background-size: auto 40%;
     width: 110vh;
@@ -440,22 +440,10 @@ form {
     display: flex;
     -webkit-justify-content: center;
     justify-content: center;
-    background: #444;
-    border-radius: 8px;
     color: #fff;
     content: attr(title);
-    margin: -82px auto 0;
+    margin: -75px auto auto;
     font-size: 16px;
     padding: 13px;
     width: 15rem;
-}
-
-.tooltip:hover:before {
-    border: solid;
-    border-color: #444 transparent;
-    border-width: 12px 6px 0 6px;
-    content: "";
-    left: 45%;
-    bottom: 30px;
-    position: absolute;
 }
