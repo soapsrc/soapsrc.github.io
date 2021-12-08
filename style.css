@@ -118,7 +118,6 @@ i {}
 ul {
     margin-top: 10px;
     list-style-image: url('./assets/images/arrowleft.gif');
-    font-family: 'consola';
 }
 
 u {
@@ -230,7 +229,7 @@ input[type=color] {
 }
 
 .w2 {
-    background-image: url('assets/snapchat.jpeg');
+    background-image: url('assets/snapchat.JPEG');
     background-size: 14rem auto;
     border: 5px solid #f4a58a;
 }
@@ -267,7 +266,7 @@ input[type=color] {
 }
 
 .w6 {
-    background-image: url('assets/resume.jpeg');
+    background-image: url('assets/resume.JPEG');
     background-size: 14rem auto;
     border: 5px solid #f4a58a;
 }
@@ -430,6 +429,25 @@ form {
     vertical-align: middle;
 }
 
+.profile-container {
+    background-color: white;
+    background-image: url('assets/pinklav.png');
+    background-repeat: repeat-x;
+    background-size: auto 20%;
+    padding-top: 2rem;
+    width: 77rem;
+    height: 62rem;
+    border-radius: 5%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    display: none;
+    position: fixed;
+    z-index: 3;
+    overflow: hidden;
+}
+
 
 /* Add Zoom Animation */
 
@@ -490,6 +508,7 @@ form {
     display: flex;
     flex-flow: wrap;
     margin: 25px 0;
+    padding-bottom: 50px;
     width: 77rem;
     height: 62rem;
     justify-content: center;
@@ -571,11 +590,11 @@ form {
 }
 
 .container .card:hover .sci li {
-    transform: translateY(-50px);
+    transform: translateY(-45px);
     opacity: 1;
 }
 
 .container .card .sci li a {
-    color: #fff;
+    color: #000;
     font-size: 15px;
 }
