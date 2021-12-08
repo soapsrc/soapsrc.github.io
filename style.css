@@ -80,9 +80,13 @@ h6 {
 }
 
 h1 {
-    font-size: 4.0rem;
-    font-weight: 500;
     padding: 5vh;
+    font: {
+        family: 'Playfair Display', serif;
+        weight: 400;
+        size: 25px;
+    }
+    letter-spacing: 3px;
 }
 
 h2 {
@@ -503,6 +507,17 @@ form {
     z-index: 3;
 }
 
+.contact-container {
+    background-image: url('assets/leafbg.jpeg');
+    background-size: cover;
+    width: 77rem;
+    height: 62rem;
+    border-radius: 5%;
+    display: none;
+    position: fixed;
+    z-index: 3;
+}
+
 .container {
     z-index: 1;
     display: flex;
@@ -597,4 +612,98 @@ form {
 .container .card .sci li a {
     color: #000;
     font-size: 15px;
+}
+
+.contact {
+    z-index: 1;
+    display: flex;
+    flex-flow: wrap;
+    margin: 25px 0;
+    padding-bottom: 50px;
+    width: 77rem;
+    height: 62rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.contact .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.contact .card:hover .content {
+    transform: translateY(-20px);
+}
+
+.contact .card .content .imgBx {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.contact .card .content .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact .card .content .contentBx h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.contact .card .content .contentBx h3 span {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.contact .card .sci {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+}
+
+.contact .card .sci li {
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.buttons {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    letter-spacing: 1rem;
 }

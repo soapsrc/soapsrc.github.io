@@ -51,7 +51,7 @@
                     <button value="0" id="0" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('login-container').style.display='block'"></button>
                     </span>
                 </div>
-                <div div class="widget w3 float-child"><span class="tooltip" title="About Me">
+                <div div class="widget w3 float-child"><span class="tooltip" title="About me">
                     <button value="14" id="14" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('profile-container').style.display='block'"></button>
                 </span>
                 </div>
@@ -67,7 +67,7 @@
                 </div>
                 <div div class="widget w8 float-child">
                     <span class="tooltip" title="Contact me">
-                <button value="13" id="13" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'"></button>
+                <button value="13" id="13" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('contact-container').style.display='block'"></button>
                      </span>
                 </div>
                 <div div class="widget w5 float-child">
@@ -158,87 +158,114 @@
         </div>
         <div class="projects-container animate" id="projects-container">
             <span onclick="document.getElementById('projects-container').style.display='none',document.getElementById('main-container').style.pointerEvents='auto'" class="close" title="Close Modal">&times;</span>
-            <div class="">
-                <section>
-                    <div class="container">
-                        <div class="card">
-                            <div class="content">
-                                <div class="imgBx">
-                                    <img src="assets/sciencegirl.png">
-                                </div>
-                                <div class="contentBx">
-                                    <h3>STEM Grads by Gender<br><span>Information Visualization</span></h3>
-                                </div>
-                            </div>
-                            <ul class="sci">
-                                <li>
-                                    <a href="https://soapsrc.github.io/STEM-Grads-by-Gender/">View project</a>
-                                </li>
 
-                            </ul>
+            <div class="container">
+                <div class="card">
+                    <div class="content">
+                        <div class="imgBx">
+                            <img src="assets/sciencegirl.png">
                         </div>
-                        <div class="card">
-                            <div class="content">
-                                <div class="imgBx">
-                                    <img src="assets/kirby umbrella.gif">
-                                </div>
-                                <div class="contentBx">
-                                    <h3>The Kirby Button<br><span>Human-Computer Interactions II</span></h3>
-                                </div>
-                            </div>
-                            <ul class="sci">
-                                <li>
-                                    <a href="https://soapsrc.github.io/Kirby-Button-Report/">View project</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card">
-                            <div class="content">
-                                <div class="imgBx">
-                                    <img src="assets/mspenguin.gif">
-                                </div>
-                                <div class="contentBx">
-                                    <h3>Project UNLOCK<br><span>Human-Computer Interactions II</span></h3>
-                                </div>
-                            </div>
-                            <ul class="sci">
-                                <li>
-                                    <a href="https://soapsrc.github.io/Phone-Unlock-Report/">View project</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card">
-                            <div class="content">
-                                <div class="imgBx">
-                                    <img src="assets/studybird.gif">
-                                </div>
-                                <div class="contentBx">
-                                    <h3>Study Shuffle<br><span>Human-Computer Interactions II</span></h3>
-                                </div>
-                            </div>
-                            <ul class="sci">
-                                <li>
-                                    <a href="https://soapsrc.github.io/Study-Shuffle-Report/">View project</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card">
-                            <div class="content">
-                                <div class="imgBx">
-                                    <img src="https://image.flaticon.com/icons/png/256/4213/4213641.png">
-                                </div>
-                                <div class="contentBx">
-                                    <h3>Project 4<br><span>Human-Computer Interactions II</span></h3>
-                                </div>
-                            </div>
-                            <ul class="sci">
-                                <li>
-                                    <a href="https://soapsrc.github.io/Study-Shuffle-Report/">View project</a>
-                                </li>
-                            </ul>
+                        <div class="contentBx">
+                            <h3>STEM Grads by Gender<br><span>Information Visualization</span></h3>
                         </div>
                     </div>
-                </section>
+                    <ul class="sci">
+                        <li>
+                            <a href="https://soapsrc.github.io/STEM-Grads-by-Gender/">View project</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="imgBx">
+                            <img src="assets/kirby umbrella.gif">
+                        </div>
+                        <div class="contentBx">
+                            <h3>The Kirby Button<br><span>Human-Computer Interactions II</span></h3>
+                        </div>
+                    </div>
+                    <ul class="sci">
+                        <li>
+                            <a href="https://soapsrc.github.io/Kirby-Button-Report/">View project</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="imgBx">
+                            <img src="assets/mspenguin.gif">
+                        </div>
+                        <div class="contentBx">
+                            <h3>Project UNLOCK<br><span>Human-Computer Interactions II</span></h3>
+                        </div>
+                    </div>
+                    <ul class="sci">
+                        <li>
+                            <a href="https://soapsrc.github.io/Phone-Unlock-Report/">View project</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="imgBx">
+                            <img src="assets/studybird.gif">
+                        </div>
+                        <div class="contentBx">
+                            <h3>Study Shuffle<br><span>Human-Computer Interactions II</span></h3>
+                        </div>
+                    </div>
+                    <ul class="sci">
+                        <li>
+                            <a href="https://soapsrc.github.io/Study-Shuffle-Report/">View project</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="imgBx">
+                            <img src="https://image.flaticon.com/icons/png/256/4213/4213641.png">
+                        </div>
+                        <div class="contentBx">
+                            <h3>Project 4<br><span>Human-Computer Interactions II</span></h3>
+                        </div>
+                    </div>
+                    <ul class="sci">
+                        <li>
+                            <a href="https://soapsrc.github.io/Study-Shuffle-Report/">View project</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="contact-container animate" id="contact-container">
+            <span onclick="document.getElementById('contact-container').style.display='none',document.getElementById('main-container').style.pointerEvents='auto'" class="close" title="Close Modal">&times;</span>
+
+            <div class="contact">
+                <div class="card">
+                    <div class="content">
+                        <div class="imgBx">
+                            <img src="assets/me2.png">
+                        </div>
+                        <div class="contentBx">
+                            <h3>Get in touch!<br><span><div class="effect solanio">
+                                <div class="buttons">
+                                  <a href="https://www.linkedin.com/in/sophiale4/" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                  <a href="https://github.com/soapsrc/" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                  <a href="mailto: le.sophie04@gmail.com" title="Send an e-mail!"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+
+                                </div>
+                              </div></span></h3>
+                        </div>
+                    </div>
+                    <ul class="sci">
+                        <li>
+                            <a href="https://soapsrc.github.io/STEM-Grads-by-Gender/">View project</a>
+                        </li>
+
+                    </ul>
+                </div>
+
             </div>
         </div>
     </div>

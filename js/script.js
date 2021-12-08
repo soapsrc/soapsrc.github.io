@@ -62,6 +62,9 @@ $("button").click(function() {
         case 12:
             document.getElementById('projects-container').style.display = 'block';
             break;
+        case 13:
+            document.getElementById('contact-container').style.display = 'block';
+            break;
         case 14:
             document.getElementById('profile-container').style.display = 'block';
             break;
