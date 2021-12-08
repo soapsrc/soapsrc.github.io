@@ -35,7 +35,7 @@
 
     <div class="pre">
 
-        <div class="header">
+        <div class="header" id="main-container">
             <div class="header-align">
                 <div class="row1">
                     <div class="widget w1 float-child">
@@ -48,24 +48,24 @@
                 <div div class="widget w2 float-child">
                     <span class="tooltip" title="SoapChat">
                     <span class="dot">4</span>
-                    <button value="0" id="0" class="icon-button" onclick="document.getElementById('login-container').style.display='block'"></button>
+                    <button value="0" id="0" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('login-container').style.display='block'"></button>
                     </span>
                 </div>
                 <div div class="widget w3 float-child"><span class="tooltip" title="About Me"></span>
                 </div>
                 <div div class="widget w6 float-child">
                     <span class="tooltip" title="Resume">
-                    <button value="11" id="11" class="icon-button" onclick="document.getElementById('resume-container').style.display='block'"></button>
+                    <button value="11" id="11" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('resume-container').style.display='block'"></button>
                 </span>
                 </div>
                 <div div class="widget w7 float-child">
                     <span class="tooltip" title="Projects">
-                <button value="12" id="12" class="icon-button" onclick="document.getElementById('projects-container').style.display='block'"></button>
+                <button value="12" id="12" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('projects-container').style.display='block'"></button>
             </span>
                 </div>
                 <div div class="widget w8 float-child">
-                    <span class="tooltip" title="Contact me">
-                <button value="11" id="11" class="icon-button" onclick="document.getElementById('resume-container').style.display='block'"></button>
+                    <span class="tooltip" title="hello me">
+                <button value="13" id="13" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'"></button>
             </span>
                 </div>
                 <div div class="widget w5 float-child">
@@ -116,12 +116,87 @@
         </div>
         <div class="projects-container animate" id="projects-container">
             <span onclick="document.getElementById('projects-container').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <div class="center-vertically">
-                <ul>
-                    <li><a href="https://soapsrc.github.io/Kirby-Button-Report/">The Kirby Button - Human Computer Interactions Project</a></li>
-                    <li><a href="https://soapsrc.github.io/STEM-Grads-by-Gender/">STEM Grads by Gender - Information Visualization Project</a></li>
-                </ul>
-                ** This portfolio site is still under construction! **
+            <div class="">
+                <section>
+                    <div class="container">
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgBx">
+                                    <img src="assets/sciencegirl.png">
+                                </div>
+                                <div class="contentBx">
+                                    <h3>STEM Grads by Gender<br><span>Information Visualization</span></h3>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li>
+                                    <a href="https://soapsrc.github.io/STEM-Grads-by-Gender/">View project</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgBx">
+                                    <img src="assets/kirbylaptop.gif">
+                                </div>
+                                <div class="contentBx">
+                                    <h3>The Kirby Button<br><span>Human-Computer Interactions II</span></h3>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li>
+                                    <a href="https://soapsrc.github.io/Kirby-Button-Report/">View project</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgBx">
+                                    <img src="assets/penguinseal.png">
+                                </div>
+                                <div class="contentBx">
+                                    <h3>Project UNLOCK<br><span>Human-Computer Interactions II</span></h3>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li>
+                                    <a href="https://soapsrc.github.io/Phone-Unlock-Report/">View project</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgBx">
+                                    <img src="assets/studygirl.png">
+                                </div>
+                                <div class="contentBx">
+                                    <h3>Study Shuffle<br><span>Human-Computer Interactions II</span></h3>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li>
+                                    <a href="https://soapsrc.github.io/Study-Shuffle-Report/">View project</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgBx">
+                                    <img src="https://image.flaticon.com/icons/png/256/4213/4213641.png">
+                                </div>
+                                <div class="contentBx">
+                                    <h3>Project 4<br><span>Human-Computer Interactions II</span></h3>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li>
+                                    <a href="https://soapsrc.github.io/Study-Shuffle-Report/">View project</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </div>

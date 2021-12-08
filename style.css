@@ -9,6 +9,11 @@
     --accent2-c: #bbf1f9;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 ::-webkit-scrollbar {
     width: 7px;
 }
@@ -136,7 +141,6 @@ u {
 }
 
 .pre img {
-    border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
     margin-left: auto;
@@ -189,6 +193,7 @@ input[type=color] {
     width: 77rem;
     height: 62rem;
     border-radius: 5%;
+    pointer-events: auto;
 }
 
 .header-align {
@@ -470,18 +475,107 @@ form {
 }
 
 .projects-container {
-    background-color: white;
-    background-image: url('assets/pinklav.png');
-    background-repeat: repeat-x;
-    background-size: auto 40%;
+    background-image: url('assets/leafbg.jpeg');
+    background-size: cover;
     width: 77rem;
     height: 62rem;
     border-radius: 5%;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    flex-flow: column wrap;
     display: none;
     position: fixed;
     z-index: 3;
+}
+
+.container {
+    z-index: 1;
+    display: flex;
+    flex-flow: wrap;
+    margin: 25px 0;
+    width: 77rem;
+    height: 62rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card {
+    position: relative;
+    width: 170px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.container .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.container .card:hover .content {
+    transform: translateY(-20px);
+}
+
+.container .card .content .imgBx {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.container .card .content .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .content .contentBx h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.container .card .content .contentBx h3 span {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.container .card .sci {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+}
+
+.container .card .sci li {
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.container .card:hover .sci li {
+    transform: translateY(-50px);
+    opacity: 1;
+}
+
+.container .card .sci li a {
+    color: #fff;
+    font-size: 15px;
 }
