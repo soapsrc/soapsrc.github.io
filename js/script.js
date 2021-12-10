@@ -121,10 +121,12 @@ new Vue({
     }
 })
 
+var audio = new Audio('assets/unlock.mp3');
+
 $(document).ready(function() {
     $("#unlock").click(function() {
         document.getElementById('unlock-container').style.position = "relative";
-        //document.getElementById('unlock-screen').style.display = 'none';
+        audio.play();
         unlock();
     });
 });
