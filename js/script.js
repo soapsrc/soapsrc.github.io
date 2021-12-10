@@ -120,3 +120,19 @@ new Vue({
         }, 1000)
     }
 })
+
+$(document).ready(function() {
+    $("#unlock").click(function() {
+        document.getElementById('unlock-container').style.position = "relative";
+        //document.getElementById('unlock-screen').style.display = 'none';
+        unlock();
+    });
+});
+
+function unlock() {
+    document.getElementById('unlock-screen').style.top = "-105%";
+    document.getElementById('unlock').style.top = "-105%";
+    document.getElementById('flashlight').style.top = "-105%";
+    document.getElementById('camera').style.top = "-105%";
+
+}

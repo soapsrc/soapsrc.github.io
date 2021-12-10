@@ -81,11 +81,6 @@ h6 {
 
 h1 {
     padding: 5vh;
-    font: {
-        family: 'Playfair Display', serif;
-        weight: 400;
-        size: 25px;
-    }
     letter-spacing: 3px;
 }
 
@@ -143,16 +138,6 @@ u {
     justify-content: center;
 }
 
-.pre img {
-    border-radius: 4px;
-    padding: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    width: 300px;
-    display: block;
-}
-
 .login-container {
     background-color: white;
     background-image: url('assets/pinklav.png');
@@ -183,7 +168,81 @@ input[type=color] {
     border: 1px solid #3A2218;
 }
 
+.unlock-container {
+    position: relative;
+    width: 77rem;
+    height: 62rem;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.unlock-screen {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    z-index: 3;
+    display: auto;
+    top: 0%;
+    -webkit-transition: top 1.5s ease-out;
+}
+
+.unlock-screen img {
+    width: 100%;
+}
+
+.unlock-text {
+    position: absolute;
+    top: 92%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: -4px 0;
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    font-size: 25px;
+    -webkit-transition: top 3s ease-out;
+    cursor: pointer;
+}
+
+.unlock-icon {
+    height: 45px;
+    width: 45px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    padding: 10px 10px;
+    -webkit-transition: top 3s ease-out;
+}
+
+.camera {
+    position: absolute;
+    top: 92%;
+    transform: translate(450%, -50%);
+    z-index: 4;
+}
+
+.flashlight {
+    position: absolute;
+    top: 92%;
+    transform: translate(-500%, -50%);
+    z-index: 4;
+    padding: 7px 10px;
+}
+
+.camera img {
+    width: 25px;
+    height: auto;
+}
+
+.flashlight img {
+    width: 15px;
+    height: auto;
+}
+
 .header {
+    position: absolute;
     display: flex;
     flex-direction: row;
     padding: 0rem;
@@ -302,12 +361,25 @@ input[type=color] {
     border-radius: 50%;
     display: inline-block;
     color: white;
-    text-align: center;
     padding: -4px 0;
     text-align: center;
     font-family: 'Helvetica Neue';
     font-size: 36px;
     transform: translate(260%, -20%);
+    position: absolute;
+    z-index: 2;
+}
+
+.name {
+    width: 15rem;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: -4px 0;
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    font-size: 16px;
+    transform: translate(0%, 620%);
     position: absolute;
     z-index: 2;
 }
@@ -437,7 +509,7 @@ form {
     background-color: white;
     background-image: url('assets/pinklav.png');
     background-repeat: repeat-x;
-    background-size: auto 20%;
+    background-size: auto 30%;
     padding-top: 2rem;
     width: 77rem;
     height: 62rem;
@@ -476,24 +548,6 @@ form {
     to {
         transform: scale(1)
     }
-}
-
-.tooltip {
-    display: inline;
-    position: relative;
-}
-
-.tooltip:hover:after {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
-    color: #fff;
-    content: attr(title);
-    margin: -75px auto auto;
-    font-size: 16px;
-    padding: 13px;
-    width: 15rem;
 }
 
 .projects-container {

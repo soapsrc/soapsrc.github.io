@@ -34,7 +34,16 @@
     <title>soapsrc - Software and Web Developer based in Canada</title>
 
     <div class="pre">
-
+        <div class="unlock-container" id="unlock-container">
+            <div class="unlock-screen" id="unlock-screen">
+                <img src="assets/wallpaper2.jpeg">
+            </div>
+            <span class="unlock-icon flashlight" id="flashlight"><img src="assets/flashlight.png"></span>
+            <div class="unlock-text" id="unlock">
+                Swipe up to unlock
+            </div>
+            <span class="unlock-icon camera" id="camera"><img src="assets/camera.png"></span>
+        </div>
         <div class="header" id="main-container">
             <div class="header-align">
                 <div class="row1">
@@ -47,28 +56,29 @@
                 </div>
                 <div div class="widget w2 float-child">
                     <span class="dot">4</span>
-                    <span class="tooltip" title="SoapChat">
+                    <span class="name">SoapChat</span>
                     <button value="0" id="0" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('login-container').style.display='block'"></button>
                     </span>
                 </div>
-                <div div class="widget w3 float-child"><span class="tooltip" title="About me">
+                <div div class="widget w3 float-child">
+                    <span class="name">About me</span>
                     <button value="14" id="14" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('profile-container').style.display='block'"></button>
-                </span>
+                    </span>
                 </div>
                 <div div class="widget w6 float-child">
-                    <span class="tooltip" title="Resume">
+                    <span class="name">Resume</span>
                     <button value="11" id="11" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('resume-container').style.display='block'"></button>
-                </span>
+                    </span>
                 </div>
                 <div div class="widget w7 float-child">
-                    <span class="tooltip" title="Projects">
-                <button value="12" id="12" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('projects-container').style.display='block'"></button>
-            </span>
+                    <span class="name">Projects</span>
+                    <button value="12" id="12" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('projects-container').style.display='block'"></button>
+                    </span>
                 </div>
                 <div div class="widget w8 float-child">
-                    <span class="tooltip" title="Contact me">
-                <button value="13" id="13" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('contact-container').style.display='block'"></button>
-                     </span>
+                    <span class="name">Contact me</span>
+                    <button value="13" id="13" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('contact-container').style.display='block'"></button>
+                    </span>
                 </div>
                 <div div class="widget w5 float-child">
                     <div id="time" style="text-align:center;">
@@ -118,7 +128,7 @@
         </div>
         <div class="profile-container animate" id="profile-container">
             <span onclick="document.getElementById('profile-container').style.display='none', document.getElementById('main-container').style.pointerEvents='auto'" class="close" title="Close Modal">&times;</span>
-            <h1>About Me</h1>
+            <h1 class="ml13">About Me</h1>
             <p>Hello World! I&#39;m Sophia, a software developer based in Canada. I am currently a computer science undergraduate student at the University of Calgary. I am seeking opportunities to continue building technology solutions and ideas at a company
                 with a highly cooperative and fast-paced work environment. I am recently completing a 16-month co-op position where I have gained experienced in identifying and evaluating risks, mitigation and control activities, and business process
                 designing.
@@ -232,7 +242,7 @@
                     </div>
                     <ul class="sci">
                         <li>
-                            <a href="https://soapsrc.github.io/Study-Shuffle-Report/">View project</a>
+                            <a href="https://soapsrc.github.io/As-If-I-Knew-Nothing/">View project</a>
                         </li>
                     </ul>
                 </div>
