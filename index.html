@@ -2,6 +2,13 @@
 <html lang="en">
 <html>
 
+<!--
+
+    ⭑･ﾟﾟ･*:༅｡.｡༅:*ﾟ:*:✼✿　Website Design by Sophia @ www.slecreative.co ✿✼:*ﾟ:༅｡.｡༅:*･ﾟﾟ･⭑
+
+-->
+
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,235 +36,236 @@
 
 </head>
 
-<div>
+<body>
+    <div>
 
-    <title>soapsrc - Software and Web Developer based in Canada</title>
+        <title>soapsrc - Software and Web Developer based in Canada</title>
 
-    <div class="pre">
-        <div class="unlock-container" id="unlock-container">
-            <div class="unlock-screen" id="unlock-screen">
-                <img src="assets/wallpaper2.jpeg">
+        <div class="pre">
+            <div class="unlock-container" id="unlock-container">
+                <div class="unlock-screen" id="unlock-screen">
+                    <img src="assets/wallpaper2.jpeg">
+                </div>
+                <span class="unlock-icon flashlight" id="flashlight"><img src="assets/flashlight.png"></span>
+                <div class="unlock-text" id="unlock">
+                    Swipe up to unlock
+                </div>
+                <span class="unlock-icon camera" id="camera"><img src="assets/camera.png"></span>
             </div>
-            <span class="unlock-icon flashlight" id="flashlight"><img src="assets/flashlight.png"></span>
-            <div class="unlock-text" id="unlock">
-                Swipe up to unlock
-            </div>
-            <span class="unlock-icon camera" id="camera"><img src="assets/camera.png"></span>
-        </div>
-        <div class="header" id="main-container">
-            <div class="header-align">
-                <div class="row1">
-                    <div class="widget w1 float-child">
-                        <h1 class="title">soapsrc</h1>
-                    </div>
-                </div>
-                <div div class="widget w4 float-child ">
-                    Combining creativity with code.
-                </div>
-                <div div class="widget w2 float-child">
-                    <span class="dot">4</span>
-                    <span class="name">SoapChat</span>
-                    <button value="0" id="0" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('login-container').style.display='block'"></button>
-                    </span>
-                </div>
-                <div div class="widget w3 float-child">
-                    <span class="name">About me</span>
-                    <button value="14" id="14" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('profile-container').style.display='block'"></button>
-                    </span>
-                </div>
-                <div div class="widget w6 float-child">
-                    <span class="name">Resume</span>
-                    <button value="11" id="11" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('resume-container').style.display='block'"></button>
-                    </span>
-                </div>
-                <div div class="widget w7 float-child">
-                    <span class="name">Projects</span>
-                    <button value="12" id="12" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('projects-container').style.display='block'"></button>
-                    </span>
-                </div>
-                <div div class="widget w8 float-child">
-                    <span class="name">Contact me</span>
-                    <button value="13" id="13" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('contact-container').style.display='block'"></button>
-                    </span>
-                </div>
-                <div div class="widget w5 float-child">
-                    <div id="time" style="text-align:center;">
-                        <div class="date">
-                            <span class="day">{{this.day}}</span>
-                            <span class="date">{{this.date}}</span>
-                        </div>
-                        <div class="time">
-                            <span class="time">{{this.time}}</span>
+            <div class="header" id="main-container">
+                <div class="header-align">
+                    <div class="row1">
+                        <div class="widget w1 float-child">
+                            <h1 class="title">soapsrc</h1>
                         </div>
                     </div>
+                    <div div class="widget w4 float-child ">
+                        Combining creativity with code.
+                    </div>
+                    <div div class="widget w2 float-child">
+                        <span class="dot">4</span>
+                        <span class="name">SoapChat</span>
+                        <button value="0" id="0" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('login-container').style.display='block'"></button>
+                        </span>
+                    </div>
+                    <div div class="widget w3 float-child">
+                        <span class="name">About me</span>
+                        <button value="14" id="14" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('profile-container').style.display='block'"></button>
+                        </span>
+                    </div>
+                    <div div class="widget w6 float-child">
+                        <span class="name">Resume</span>
+                        <button value="11" id="11" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('resume-container').style.display='block'"></button>
+                        </span>
+                    </div>
+                    <div div class="widget w7 float-child">
+                        <span class="name">Projects</span>
+                        <button value="12" id="12" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('projects-container').style.display='block'"></button>
+                        </span>
+                    </div>
+                    <div div class="widget w8 float-child">
+                        <span class="name">Contact me</span>
+                        <button value="13" id="13" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('contact-container').style.display='block'"></button>
+                        </span>
+                    </div>
+                    <div div class="widget w5 float-child">
+                        <div id="time" style="text-align:center;">
+                            <div class="date">
+                                <span class="day">{{this.day}}</span>
+                                <span class="date">{{this.date}}</span>
+                            </div>
+                            <div class="time">
+                                <span class="time">{{this.time}}</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="login-container animate" id="login-container">
-            <h1 class="ml13">Welcome to SoapChat</h1>
+            <div class="login-container animate" id="login-container">
+                <h1 class="ml13">Welcome to SoapChat</h1>
 
-            <div id="avatar"></div>
-            <span onclick="document.getElementById('login-container').style.display='none', document.getElementById('main-container').style.pointerEvents='auto'" class="close" title="Close Modal">&times;</span>
-            <form onsubmit="return getLogin()" id="login">
-                <label for="fname">Name:</label>
-                <input type="text" id="fname" name="fname">
-                <input type="color" id="bg" name="bg">
-                <label for="bg">Background colour</label>
-            </form>
-            <div class="icons">
-                <button class="button" value="1" id="1"><img src="assets/kirby.png "></button>
-                <button class="button" value="2" id="2"><img src="assets/kingdede.gif "></button>
-                <button class="button" value="3" id="3"><img src="assets/metaknight.gif "></button>
-                <button class="button" value="4" id="4"><img src="assets/mario.gif "></button>
-                <button class="button" value="5" id="5"><img src="assets/bowser.gif "></button>
-                <button class="button" value="6" id="6"><img src="assets/daisy.gif "></button>
-                <button class="button" value="7" id="7"><img src="assets/sonic.png "></button>
-                <button class="button" value="8" id="8"><img src="assets/pikachu.png "></button>
-                <button class="button" value="9" id="9"><img src="assets/gengar.png "></button>
-                <button class="button" value="10" id="10"><img src="assets/jira.png "></button>
+                <div id="avatar"></div>
+                <span onclick="document.getElementById('login-container').style.display='none', document.getElementById('main-container').style.pointerEvents='auto'" class="close" title="Close Modal">&times;</span>
+                <form onsubmit="return getLogin()" id="login">
+                    <label for="fname">Name:</label>
+                    <input type="text" id="fname" name="fname">
+                    <input type="color" id="bg" name="bg">
+                    <label for="bg">Background colour</label>
+                </form>
+                <div class="icons">
+                    <button class="button" value="1" id="1"><img src="assets/kirby.png "></button>
+                    <button class="button" value="2" id="2"><img src="assets/kingdede.gif "></button>
+                    <button class="button" value="3" id="3"><img src="assets/metaknight.gif "></button>
+                    <button class="button" value="4" id="4"><img src="assets/mario.gif "></button>
+                    <button class="button" value="5" id="5"><img src="assets/bowser.gif "></button>
+                    <button class="button" value="6" id="6"><img src="assets/daisy.gif "></button>
+                    <button class="button" value="7" id="7"><img src="assets/sonic.png "></button>
+                    <button class="button" value="8" id="8"><img src="assets/pikachu.png "></button>
+                    <button class="button" value="9" id="9"><img src="assets/gengar.png "></button>
+                    <button class="button" value="10" id="10"><img src="assets/jira.png "></button>
+                </div>
+                <button type="submit" form="login" value="Login">Login</button>
             </div>
-            <button type="submit" form="login" value="Login">Login</button>
-        </div>
 
-        <div class="resume-container animate" id="resume-container">
-            <span onclick="document.getElementById('resume-container').style.display='none', document.getElementById('main-container').style.pointerEvents='auto'" class="close" title="Close Modal">&times;</span>
-            <object data="assets/resume.pdf" type="application/pdf" width="87%" height="95%">
+            <div class="resume-container animate" id="resume-container">
+                <span onclick="document.getElementById('resume-container').style.display='none', document.getElementById('main-container').style.pointerEvents='auto'" class="close" title="Close Modal">&times;</span>
+                <object data="assets/resume.pdf" type="application/pdf" width="87%" height="95%">
             </object><br>
-            <a href="assets/resume.pdf">View in full screen.</a>
-        </div>
-        <div class="profile-container animate" id="profile-container">
-            <span onclick="document.getElementById('profile-container').style.display='none', document.getElementById('main-container').style.pointerEvents='auto'" class="close" title="Close Modal">&times;</span>
-            <h1 class="ml13">About Me</h1>
-            <p>Hello World! I&#39;m Sophia, a software developer, web designer, and game engineer based in Canada. I graduated from the University of Calgary with a computer science undergraduate degree in 2022. I am currently working as a C++ game engineer
-                at one of the largest video game publishing companies in the world.
-            </p>
-            <p>I have a strong foundation in mathematics, logical analysis, and computing machinery. My academic interests are grounded in UX/UI design, mobile application development, cloud computing, front-end development, and data visualization. The leadership
-                and collaboration skills that I have improved upon during my career thus far has made me more well-rounded as they add onto my strong technical and critical-thinking skills previously established from computer science.</p>
-            <ul>
-                <li>🔭 I’m currently working on: completing univeristy projects</li>
-                <li>👯 I’m looking to collaborate on: general front-end development projects</li>
-                <li>🤔 I’m looking for help with: Ruby on Rails, Cloud-based architecture</li>
-                <li>💬 Ask me about: web-development, the software development lifecycle, UX/UI Design, OOP, SQL</li>
-                <li>💻 Languages I know: Java, SQL, C/C++, HTML, CSS, Python, JavaScript, and Haskell</li>
-                <li>💼 Linkedin: <a href="https://www.linkedin.com/in/sophiale4/">linkedin.com/in/sophiale4/</a></li>
-            </ul>
-            <h3 id="technologies-tools">Technologies &amp; Tools</h3>
-            <p>
-                <div style="display: flex">
-                    <img src="https://img.shields.io/badge/-Python-EAE4E9" />
-                    <img alt="JavaScript" src="https://img.shields.io/badge/-Javascript-FFF1E6" />
-                    <img alt="SQL" src="https://img.shields.io/badge/-SQL-FDE2E4" />
-                    <img alt="Git" src="https://img.shields.io/badge/-Git-FAD2E1" />
-                    <img alt="HTML/CSS" src="https://img.shields.io/badge/-HTML%2FCSS-E2ECE9" />
-                    <img alt="Vue" src="https://img.shields.io/badge/-VueJS-BEE1E6" />
-                    <img alt="SQLite" src="https://img.shields.io/badge/-SQLite-F0EFEB" />
-                    <img alt="Java" src="https://img.shields.io/badge/Java-DFE7FD" />
-                    <img alt="C" src="https://img.shields.io/badge/C-CDDAFD" />
-                    <img alt="C++" src="https://img.shields.io/badge/C%2B%2B-EAE4E9" />
-                    <img alt="C#" src="https://img.shields.io/badge/C%23-FFF1E6" />
-                    <img alt="Haskell" src="https://img.shields.io/badge/Haskell-FDE2E4">
-                    <img alt="OpenGL" src="https://img.shields.io/badge/OpenGL-E2ECE9" />
-                    <img alt="SAP" src="https://img.shields.io/badge/SAP-DFE7FD" />
-            </p>
-            <p>
-                </div>
-            </p>
-            <hr>
-        </div>
-        <div class="projects-container animate" id="projects-container">
-            <span onclick="document.getElementById('projects-container').style.display='none',document.getElementById('main-container').style.pointerEvents='auto'" class="close" title="Close Modal">&times;</span>
+                <a href="assets/resume.pdf">View in full screen.</a>
+            </div>
+            <div class="profile-container animate" id="profile-container">
+                <span onclick="document.getElementById('profile-container').style.display='none', document.getElementById('main-container').style.pointerEvents='auto'" class="close" title="Close Modal">&times;</span>
+                <h1 class="ml13">About Me</h1>
+                <p>Hello World! I&#39;m Sophia, a software developer, web designer, and game engineer based in Canada. I graduated from the University of Calgary with a computer science undergraduate degree in 2022. I am currently working as a C++ game engineer
+                    at one of the largest video game publishing companies in the world.
+                </p>
+                <p>I have a strong foundation in mathematics, logical analysis, and computing machinery. My academic interests are grounded in UX/UI design, mobile application development, cloud computing, front-end development, and data visualization. The
+                    leadership and collaboration skills that I have improved upon during my career thus far has made me more well-rounded as they add onto my strong technical and critical-thinking skills previously established from computer science.</p>
+                <ul>
+                    <li>🔭 I’m currently working on: completing univeristy projects</li>
+                    <li>👯 I’m looking to collaborate on: general front-end development projects</li>
+                    <li>🤔 I’m looking for help with: Ruby on Rails, Cloud-based architecture</li>
+                    <li>💬 Ask me about: web-development, the software development lifecycle, UX/UI Design, OOP, SQL</li>
+                    <li>💻 Languages I know: Java, SQL, C/C++, HTML, CSS, Python, JavaScript, and Haskell</li>
+                    <li>💼 Linkedin: <a href="https://www.linkedin.com/in/sophiale4/">linkedin.com/in/sophiale4/</a></li>
+                </ul>
+                <h3 id="technologies-tools">Technologies &amp; Tools</h3>
+                <p>
+                    <div style="display: flex">
+                        <img src="https://img.shields.io/badge/-Python-EAE4E9" />
+                        <img alt="JavaScript" src="https://img.shields.io/badge/-Javascript-FFF1E6" />
+                        <img alt="SQL" src="https://img.shields.io/badge/-SQL-FDE2E4" />
+                        <img alt="Git" src="https://img.shields.io/badge/-Git-FAD2E1" />
+                        <img alt="HTML/CSS" src="https://img.shields.io/badge/-HTML%2FCSS-E2ECE9" />
+                        <img alt="Vue" src="https://img.shields.io/badge/-VueJS-BEE1E6" />
+                        <img alt="SQLite" src="https://img.shields.io/badge/-SQLite-F0EFEB" />
+                        <img alt="Java" src="https://img.shields.io/badge/Java-DFE7FD" />
+                        <img alt="C" src="https://img.shields.io/badge/C-CDDAFD" />
+                        <img alt="C++" src="https://img.shields.io/badge/C%2B%2B-EAE4E9" />
+                        <img alt="C#" src="https://img.shields.io/badge/C%23-FFF1E6" />
+                        <img alt="Haskell" src="https://img.shields.io/badge/Haskell-FDE2E4">
+                        <img alt="OpenGL" src="https://img.shields.io/badge/OpenGL-E2ECE9" />
+                        <img alt="SAP" src="https://img.shields.io/badge/SAP-DFE7FD" />
+                </p>
+                <p>
+                    </div>
+                </p>
+                <hr>
+            </div>
+            <div class="projects-container animate" id="projects-container">
+                <span onclick="document.getElementById('projects-container').style.display='none',document.getElementById('main-container').style.pointerEvents='auto'" class="close" title="Close Modal">&times;</span>
 
-            <div class="container">
-                <div class="card">
-                    <div class="content">
-                        <div class="imgBx">
-                            <img src="assets/sciencegirl.png">
+                <div class="container">
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgBx">
+                                <img src="assets/sciencegirl.png">
+                            </div>
+                            <div class="contentBx">
+                                <h3>STEM Grads by Gender<br><span>Information Visualization</span></h3>
+                            </div>
                         </div>
-                        <div class="contentBx">
-                            <h3>STEM Grads by Gender<br><span>Information Visualization</span></h3>
-                        </div>
-                    </div>
-                    <ul class="sci">
-                        <li>
-                            <a href="https://soapsrc.github.io/STEM-Grads-by-Gender/">View project</a>
-                        </li>
+                        <ul class="sci">
+                            <li>
+                                <a href="https://soapsrc.github.io/STEM-Grads-by-Gender/">View project</a>
+                            </li>
 
-                    </ul>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <div class="imgBx">
-                            <img src="assets/kirby umbrella.gif">
-                        </div>
-                        <div class="contentBx">
-                            <h3>The Kirby Button<br><span>Human-Computer Interactions II</span></h3>
-                        </div>
+                        </ul>
                     </div>
-                    <ul class="sci">
-                        <li>
-                            <a href="https://soapsrc.github.io/Kirby-Button-Report/">View project</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <div class="imgBx">
-                            <img src="assets/mspenguin.gif">
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgBx">
+                                <img src="assets/kirby umbrella.gif">
+                            </div>
+                            <div class="contentBx">
+                                <h3>The Kirby Button<br><span>Human-Computer Interactions II</span></h3>
+                            </div>
                         </div>
-                        <div class="contentBx">
-                            <h3>Project UNLOCK<br><span>Human-Computer Interactions II</span></h3>
-                        </div>
+                        <ul class="sci">
+                            <li>
+                                <a href="https://soapsrc.github.io/Kirby-Button-Report/">View project</a>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="sci">
-                        <li>
-                            <a href="https://soapsrc.github.io/Phone-Unlock-Report/">View project</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <div class="imgBx">
-                            <img src="assets/studybird.gif">
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgBx">
+                                <img src="assets/mspenguin.gif">
+                            </div>
+                            <div class="contentBx">
+                                <h3>Project UNLOCK<br><span>Human-Computer Interactions II</span></h3>
+                            </div>
                         </div>
-                        <div class="contentBx">
-                            <h3>Study Shuffle<br><span>Human-Computer Interactions II</span></h3>
-                        </div>
+                        <ul class="sci">
+                            <li>
+                                <a href="https://soapsrc.github.io/Phone-Unlock-Report/">View project</a>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="sci">
-                        <li>
-                            <a href="https://soapsrc.github.io/Study-Shuffle-Report/">View project</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <div class="imgBx">
-                            <img src="assets/confusedcat.gif">
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgBx">
+                                <img src="assets/studybird.gif">
+                            </div>
+                            <div class="contentBx">
+                                <h3>Study Shuffle<br><span>Human-Computer Interactions II</span></h3>
+                            </div>
                         </div>
-                        <div class="contentBx">
-                            <h3>As If I Knew Nothing<br><span>Human-Computer Interactions II</span></h3>
-                        </div>
+                        <ul class="sci">
+                            <li>
+                                <a href="https://soapsrc.github.io/Study-Shuffle-Report/">View project</a>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="sci">
-                        <li>
-                            <a href="https://soapsrc.github.io/As-If-I-Knew-Nothing/">View project</a>
-                        </li>
-                    </ul>
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgBx">
+                                <img src="assets/confusedcat.gif">
+                            </div>
+                            <div class="contentBx">
+                                <h3>As If I Knew Nothing<br><span>Human-Computer Interactions II</span></h3>
+                            </div>
+                        </div>
+                        <ul class="sci">
+                            <li>
+                                <a href="https://soapsrc.github.io/As-If-I-Knew-Nothing/">View project</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="contact-container animate" id="contact-container">
-            <span onclick="document.getElementById('contact-container').style.display='none',document.getElementById('main-container').style.pointerEvents='auto'" class="close" title="Close Modal">&times;</span>
+            <div class="contact-container animate" id="contact-container">
+                <span onclick="document.getElementById('contact-container').style.display='none',document.getElementById('main-container').style.pointerEvents='auto'" class="close" title="Close Modal">&times;</span>
 
-            <div class="contact">
-                <div class="card">
-                    <div class="content">
-                        <div class="imgBx">
-                            <img src="assets/me2.png">
-                        </div>
-                        <div class="contentBx">
-                            <h3>Get in touch!<br><span><div class="effect solanio">
+                <div class="contact">
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgBx">
+                                <img src="assets/me2.png">
+                            </div>
+                            <div class="contentBx">
+                                <h3>Get in touch!<br><span><div class="effect solanio">
                                 <div class="buttons">
                                   <a href="https://www.linkedin.com/in/sophiale4/" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                                   <a href="https://github.com/soapsrc/" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -265,23 +273,23 @@
 
                                 </div>
                               </div></span></h3>
+                            </div>
                         </div>
+                        <ul class="sci">
+                            <li>
+                                <a href="https://soapsrc.github.io/STEM-Grads-by-Gender/">View project</a>
+                            </li>
+
+                        </ul>
                     </div>
-                    <ul class="sci">
-                        <li>
-                            <a href="https://soapsrc.github.io/STEM-Grads-by-Gender/">View project</a>
-                        </li>
 
-                    </ul>
                 </div>
-
             </div>
         </div>
-    </div>
-    <!-- End pre div -->
+        <!-- End pre div -->
 
-    <script src="js/script.js" type='text/javascript'></script>
+        <script src="js/script.js" type='text/javascript'></script>
 
-    </body>
+</body>
 
 </html>
