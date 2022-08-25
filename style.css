@@ -242,10 +242,16 @@ input[type=color] {
     border-radius: 25px;
 }
 
+.w0 {
+    background-image: url('assets/ugc.png');
+    background-size: 14rem auto;
+    border: 5px solid #8AA9BB;
+}
+
 .w1 {
     background-color: #E1B7B8;
     border: 5px solid #F9F1F1;
-    width: 59.5rem;
+    width: 40.9375rem;
     letter-spacing: 1.5rem;
     display: flex;
     justify-content: center;
@@ -340,8 +346,21 @@ input[type=color] {
     font-family: 'Helvetica Neue';
     font-weight: 400;
     font-size: 16px;
-    transform: translate(0%, 620%);
+    transform: translate(-4%, 630%);
     position: absolute;
+    z-index: 2;
+}
+
+.name2 {
+    width: 15rem;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: -4px 0;
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    font-size: 16px;
+    transform: translate(-4%, 630%);
     z-index: 2;
 }
 
@@ -440,6 +459,7 @@ form {
     color: #000;
     font-size: 35px;
     font-weight: bold;
+    z-index: 10;
 }
 
 .close:hover,
@@ -449,10 +469,7 @@ form {
 }
 
 .resume-container {
-    background-color: white;
-    background-image: url('assets/pinklav.png');
-    background-repeat: repeat-x;
-    background-size: auto 40%;
+    background-color: #FFFAF4;
     width: 77rem;
     height: 62rem;
     border-radius: 5%;
@@ -464,11 +481,11 @@ form {
     position: fixed;
     z-index: 3;
     vertical-align: middle;
+    overflow: hidden;
 }
 
 .profile-container {
-    background-color: white;
-    background-image: url('assets/pinklav.png');
+    background-color: #F9F1F1;
     background-repeat: repeat-x;
     background-size: auto 30%;
     padding-top: 2rem;
@@ -512,7 +529,7 @@ form {
 }
 
 .projects-container {
-    background-image: url('assets/leafbg.jpeg');
+    background-image: url('assets/leafbg2.png');
     background-size: cover;
     width: 77rem;
     height: 62rem;
@@ -523,7 +540,7 @@ form {
 }
 
 .contact-container {
-    background-image: url('assets/leafbg.jpeg');
+    background-image: url('assets/abstract.jpeg');
     background-size: cover;
     width: 77rem;
     height: 62rem;
