@@ -545,7 +545,7 @@ form {
 }
 
 .contact-container {
-    background-image: url('assets/abstract.jpeg');
+    background-image: url('assets/abstract.png');
     background-size: cover;
     width: var(--box-width);
     height: var(--box-height);
