@@ -128,13 +128,11 @@ $(document).ready(function() {
         document.getElementById('unlock-container').style.position = "relative";
         audio.play();
         unlock();
+        document.getElementById("unlock-container").removeChild(document.getElementById("unlock"));
     });
 });
 
 function unlock() {
     document.getElementById('unlock-screen').style.top = "-105%";
-    document.getElementById('unlock').style.top = "-105%";
-    document.getElementById('flashlight').style.top = "-105%";
-    document.getElementById('camera').style.top = "-105%";
 
 }
