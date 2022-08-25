@@ -79,24 +79,26 @@
                         <button value="11" id="11" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('resume-container').style.display='block'"></button>
 
                     </div>
-                    <div div class="widget w7 float-child">
-                        <span class="name">Projects</span>
-                        <button value="12" id="12" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('projects-container').style.display='block'"></button>
+                    <div class="row1">
+                        <div div class="widget w7 float-child">
+                            <span class="name">Projects</span>
+                            <button value="12" id="12" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('projects-container').style.display='block'"></button>
 
-                    </div>
-                    <div div class="widget w8 float-child">
-                        <span class="name">Contact me</span>
-                        <button value="13" id="13" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('contact-container').style.display='block'"></button>
+                        </div>
+                        <div div class="widget w8 float-child">
+                            <span class="name">Contact me</span>
+                            <button value="13" id="13" class="icon-button" onclick="document.getElementById('main-container').style.pointerEvents='none'" onclick="document.getElementById('contact-container').style.display='block'"></button>
 
-                    </div>
-                    <div div class="widget w5 float-child">
-                        <div id="time" style="text-align:center;">
-                            <div class="date">
-                                <span class="day">{{this.day}}</span>
-                                <span class="date">{{this.date}}</span>
-                            </div>
-                            <div class="time">
-                                <span class="time">{{this.time}}</span>
+                        </div>
+                        <div div class="widget w5 float-child">
+                            <div id="time" style="text-align:center;">
+                                <div class="date">
+                                    <span class="day">{{this.day}}</span>
+                                    <span class="date">{{this.date}}</span>
+                                </div>
+                                <div class="time">
+                                    <span class="time">{{this.time}}</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -149,7 +151,6 @@
             </div>
             <div class="projects-container animate" id="projects-container">
                 <span onclick="document.getElementById('projects-container').style.display='none',document.getElementById('main-container').style.pointerEvents='auto'" class="close" title="Close Modal">&times;</span>
-
                 <div class="container">
                     <div class="card">
                         <div class="content">
