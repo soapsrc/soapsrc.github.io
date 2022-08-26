@@ -22,7 +22,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="style.css" title="default" />
+    <!-- Narrow style sheet -->
+    <link rel="alternate stylesheet" type="text/css" href="mobile.css" title="mobile" />
     <script src="https://kit.fontawesome.com/d663473e0e.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="assets/icon.png">
 
@@ -34,6 +36,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
+
 </head>
 
 <body>
@@ -44,7 +47,7 @@
         <div class="pre">
             <div class="unlock-container" id="unlock-container">
                 <div class="unlock-screen" id="unlock-screen">
-                    <img src="assets/unlockscreen.gif">
+                    <img id="unlockimg" src="assets/unlockscreen.gif" object-fit="fill">
                 </div>
                 <div class="unlock-text" id="unlock">
                 </div>
@@ -56,7 +59,7 @@
                             <h1 class="title">soapsrc</h1>
                         </div>
                         <div class="widget w0 float-child">
-                            <span class="name2">UGC Content</span>
+                            <span class="name2">UGC Marketing</span>
 
                         </div>
                     </div>
