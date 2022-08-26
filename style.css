@@ -143,9 +143,8 @@ u {
 
 .login-container {
     background-color: white;
-    background-image: url('assets/pinklav.png');
-    background-repeat: repeat-x;
-    background-size: auto 40%;
+    background-image: url('assets/soapchatbg.png');
+    background-size: cover;
     width: var(--box-width);
     height: var(--box-height);
     border-radius: 5%;
@@ -439,7 +438,7 @@ button[type=submit] {
     padding: 12px 80px;
     margin: 17px 0px;
     border-radius: 5rem;
-    background: #CAADC6;
+    background: #AAA3B8;
 }
 
 form {
