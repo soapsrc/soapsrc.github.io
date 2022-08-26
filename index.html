@@ -112,7 +112,10 @@
                 <h1 class="ml13">Welcome to SoapChat</h1>
 
                 <div id="avatar"></div>
-                <span onclick="document.getElementById('login-container').style.display='none', document.getElementById('main-container').style.pointerEvents='auto'" class="close" title="Close Modal">&times;</span>
+                <span onclick="document.getElementById('login-container').classList.add('closeanimate'), setTimeout(function(){
+                    document.getElementById('login-container').classList.remove('closeanimate');
+                    document.getElementById('login-container').style.display='none';
+                    }, 600), document.getElementById('main-container').style.pointerEvents='auto'" class="close closeanimate" title="Close Modal">&times;</span>
                 <form onsubmit="return getLogin()" id="login">
                     <label for="fname">Name:</label>
                     <input type="text" id="fname" name="fname">
@@ -135,127 +138,137 @@
             </div>
 
             <div class="resume-container animate" id="resume-container">
-                <span onclick="document.getElementById('resume-container').style.display='none', document.getElementById('main-container').style.pointerEvents='auto'" class="close" title="Close Modal">&times;</span>
-                <div style="position: relative; width: 100%; height: 0; padding-top: 80.5195%;
- padding-bottom: 48px; margin-top: 0em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-                    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;" src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFKW2fZlhM&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                <span onclick="document.getElementById('resume-container').classList.add('closeanimate'), setTimeout(function(){
+                document.getElementById('resume-container').classList.remove('closeanimate');
+                document.getElementById('resume-container').style.display='none';
+                }, 600), document.getElementById( 'main-container').style.pointerEvents='auto' " class="close " title="Close Modal ">&times;</span>
+                <div style="position: relative; width: 100%; height: 0; padding-top: 80.5195%; padding-bottom: 48px; margin-top: 0em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform; ">
+                    <iframe loading="lazy " style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0; " src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFKW2fZlhM&#x2F;view?embed
+                    " allowfullscreen="allowfullscreen " allow="fullscreen ">
   </iframe>
                 </div>
             </div>
-            <div class="profile-container animate" id="profile-container">
-                <span onclick="document.getElementById('profile-container').style.display='none', document.getElementById('main-container').style.pointerEvents='auto'" class="close" title="Close Modal">&times;</span>
-                <div style="position: relative; width: 100%; height: 0; padding-top: 97.4026%;
-                padding-bottom: 48px; margin-top: 0.5em; margin-bottom: 0.9em; overflow: hidden;
-                border-radius: 8px; will-change: transform;">
-                    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;" src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFKWSgzWEs&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+            <div class="profile-container animate " id="profile-container">
+                <span onclick="document.getElementById('profile-container').classList.add('closeanimate'), setTimeout(function(){
+                    document.getElementById('profile-container').classList.remove('closeanimate');
+                    document.getElementById('profile-container').style.display='none';
+                    }, 600), document.getElementById( 'main-container').style.pointerEvents='auto' " class="close " title="Close Modal ">&times;</span>
+                <div style="position: relative; width: 100%; height: 0; padding-top: 97.4026%; padding-bottom: 48px; margin-top: 0.5em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform; ">
+                    <iframe loading="lazy " style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0; " src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFKWSgzWEs&#x2F;view?embed
+                    " allowfullscreen="allowfullscreen " allow="fullscreen ">
                  </iframe>
                 </div>
             </div>
-            <div class="projects-container animate" id="projects-container">
-                <span onclick="document.getElementById('projects-container').style.display='none',document.getElementById('main-container').style.pointerEvents='auto'" class="close" title="Close Modal">&times;</span>
-                <div class="container">
-                    <div class="card">
-                        <div class="content">
-                            <div class="imgBx">
-                                <img src="assets/sciencegirl.png">
+            <div class="projects-container animate " id="projects-container">
+                <span onclick="document.getElementById('projects-container').classList.add('closeanimate'), setTimeout(function(){
+                    document.getElementById('projects-container').classList.remove('closeanimate');
+                    document.getElementById('projects-container').style.display='none';
+                    }, 600),document.getElementById( 'main-container').style.pointerEvents='auto' " class="close" title="Close Modal ">&times;</span>
+                <div class="container ">
+                    <div class="card ">
+                        <div class="content ">
+                            <div class="imgBx ">
+                                <img src="assets/sciencegirl.png ">
                             </div>
-                            <div class="contentBx">
+                            <div class="contentBx ">
                                 <h3>STEM Grads by Gender<br><span>Information Visualization</span></h3>
                             </div>
                         </div>
-                        <ul class="sci">
+                        <ul class="sci ">
                             <li>
-                                <a href="https://soapsrc.github.io/STEM-Grads-by-Gender/">View project</a>
+                                <a href="https://soapsrc.github.io/STEM-Grads-by-Gender/ ">View project</a>
                             </li>
 
                         </ul>
                     </div>
-                    <div class="card">
-                        <div class="content">
-                            <div class="imgBx">
-                                <img src="assets/kirby umbrella.gif">
+                    <div class="card ">
+                        <div class="content ">
+                            <div class="imgBx ">
+                                <img src="assets/kirby umbrella.gif ">
                             </div>
-                            <div class="contentBx">
+                            <div class="contentBx ">
                                 <h3>The Kirby Button<br><span>Human-Computer Interactions II</span></h3>
                             </div>
                         </div>
-                        <ul class="sci">
+                        <ul class="sci ">
                             <li>
-                                <a href="https://soapsrc.github.io/Kirby-Button-Report/">View project</a>
+                                <a href="https://soapsrc.github.io/Kirby-Button-Report/ ">View project</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="card">
-                        <div class="content">
-                            <div class="imgBx">
-                                <img src="assets/mspenguin.gif">
+                    <div class="card ">
+                        <div class="content ">
+                            <div class="imgBx ">
+                                <img src="assets/mspenguin.gif ">
                             </div>
-                            <div class="contentBx">
+                            <div class="contentBx ">
                                 <h3>Project UNLOCK<br><span>Human-Computer Interactions II</span></h3>
                             </div>
                         </div>
-                        <ul class="sci">
+                        <ul class="sci ">
                             <li>
-                                <a href="https://soapsrc.github.io/Phone-Unlock-Report/">View project</a>
+                                <a href="https://soapsrc.github.io/Phone-Unlock-Report/ ">View project</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="card">
-                        <div class="content">
-                            <div class="imgBx">
-                                <img src="assets/studybird.gif">
+                    <div class="card ">
+                        <div class="content ">
+                            <div class="imgBx ">
+                                <img src="assets/studybird.gif ">
                             </div>
-                            <div class="contentBx">
+                            <div class="contentBx ">
                                 <h3>Study Shuffle<br><span>Human-Computer Interactions II</span></h3>
                             </div>
                         </div>
-                        <ul class="sci">
+                        <ul class="sci ">
                             <li>
-                                <a href="https://soapsrc.github.io/Study-Shuffle-Report/">View project</a>
+                                <a href="https://soapsrc.github.io/Study-Shuffle-Report/ ">View project</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="card">
-                        <div class="content">
-                            <div class="imgBx">
-                                <img src="assets/confusedcat.gif">
+                    <div class="card ">
+                        <div class="content ">
+                            <div class="imgBx ">
+                                <img src="assets/confusedcat.gif ">
                             </div>
-                            <div class="contentBx">
+                            <div class="contentBx ">
                                 <h3>As If I Knew Nothing<br><span>Human-Computer Interactions II</span></h3>
                             </div>
                         </div>
-                        <ul class="sci">
+                        <ul class="sci ">
                             <li>
-                                <a href="https://soapsrc.github.io/As-If-I-Knew-Nothing/">View project</a>
+                                <a href="https://soapsrc.github.io/As-If-I-Knew-Nothing/ ">View project</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="contact-container animate" id="contact-container">
-                <span onclick="document.getElementById('contact-container').style.display='none',document.getElementById('main-container').style.pointerEvents='auto'" class="close" title="Close Modal">&times;</span>
+                <span onclick="document.getElementById('contact-container').classList.add('closeanimate'), setTimeout(function(){
+                    document.getElementById('contact-container').classList.remove('closeanimate');
+                    document.getElementById( 'contact-container').style.display='none';
+                    }, 600),document.getElementById( 'main-container').style.pointerEvents='auto' " class="close " title="Close Modal ">&times;</span>
 
-                <div class="contact">
-                    <div class="card">
-                        <div class="content">
-                            <div class="imgBx">
-                                <img src="assets/me2.png">
+                <div class="contact ">
+                    <div class="card ">
+                        <div class="content ">
+                            <div class="imgBx ">
+                                <img src="assets/me2.png ">
                             </div>
-                            <div class="contentBx">
-                                <h3>Get in touch!<br><span><div class="effect solanio">
-                                <div class="buttons">
-                                  <a href="https://www.linkedin.com/in/sophiale4/" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                  <a href="https://github.com/soapsrc/" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>
-                                  <a href="mailto: le.sophie04@gmail.com" title="Send an e-mail!"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                            <div class="contentBx ">
+                                <h3>Get in touch!<br><span><div class="effect solanio ">
+                                <div class="buttons ">
+                                  <a href="https://www.linkedin.com/in/sophiale4/ " title="LinkedIn "><i class="fa fa-linkedin " aria-hidden="true "></i></a>
+                                  <a href="https://github.com/soapsrc/ " title="GitHub "><i class="fa fa-github " aria-hidden="true "></i></a>
+                                  <a href="mailto: le.sophie04@gmail.com " title="Send an e-mail! "><i class="fa fa-envelope " aria-hidden="true "></i></a>
 
                                 </div>
                               </div></span></h3>
                             </div>
                         </div>
-                        <ul class="sci">
+                        <ul class="sci ">
                             <li>
-                                <a href="https://soapsrc.github.io/STEM-Grads-by-Gender/">View project</a>
+                                <a href="https://soapsrc.github.io/STEM-Grads-by-Gender/ ">View project</a>
                             </li>
 
                         </ul>
@@ -266,7 +279,7 @@
         </div>
         <!-- End pre div -->
 
-        <script src="js/script.js" type='text/javascript'></script>
+        <script src="js/script.js " type='text/javascript'></script>
 
 </body>
 
