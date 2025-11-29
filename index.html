@@ -137,6 +137,18 @@
                 <button type="submit" form="login" value="Login">Login</button>
             </div>
 
+            <div class="chat-container" id="chat-container">
+                <div class="chat-header">
+                    <span class="chat-title">SoapChat</span>
+                    <span onclick="clearChat()" class="close" title="Close Chat">&times;</span>
+                </div>
+                <div class="chat-messages" id="chat-messages"></div>
+                <div class="chat-footer">
+                    <input type="text" id="chat-input" placeholder="Type a message...">
+                    <button onclick="sendMessage()" class="chat-send-btn">Send</button>
+                </div>
+            </div>
+
             <div class="resume-container animate" id="resume-container">
                 <span onclick="document.getElementById('resume-container').classList.add('closeanimate'), setTimeout(function(){
                 document.getElementById('resume-container').classList.remove('closeanimate');
