@@ -64,19 +64,13 @@ function getLogin() {
     userName = fn;
     
     // Close login container
-    document.getElementById('login-container').classList.add('closeanimate');
-    setTimeout(function(){
-        document.getElementById('login-container').classList.remove('closeanimate');
-        document.getElementById('login-container').style.display='none';
-    }, 600);
+    document.getElementById('login-container').style.display='none';
     
     // Show chat container
-    setTimeout(function(){
-        document.getElementById('chat-container').style.display = 'flex';
-        
-        // Add initial message from Sophia
-        addMessage('Sophia', 'Hi there! Thanks for visiting my portfolio site. Feel free to look around and ask me any questions :)', 'sophia');
-    }, 700);
+    document.getElementById('chat-container').style.display = 'flex';
+    
+    // Add initial message from Sophia
+    addMessage('Sophia', 'Hi there! Thanks for visiting my portfolio site. Feel free to look around and ask me any questions :)', 'sophia');
     
     return false;
 }
