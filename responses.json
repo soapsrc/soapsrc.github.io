@@ -1,0 +1,59 @@
+{
+  "greetings": [
+    "Hi there! Thanks for visiting my portfolio site!",
+    "Hello! Welcome to SoapChat!",
+    "Hey! Great to meet you!",
+    "Hi! Thanks for stopping by!"
+  ],
+  "about": [
+    "I'm a software developer and web designer based in Canada!",
+    "I love combining creativity with code to build amazing projects.",
+    "I graduated from the University of Calgary with a computer science degree.",
+    "I'm currently working as a C++ game engineer at a video game company!"
+  ],
+  "projects": [
+    "Feel free to check out my projects! I've worked on data visualization, HCI research, and more.",
+    "I'd love to show you my work! Click on the Projects button to see what I've built.",
+    "My projects range from STEM data visualization to interactive UI experiments!",
+    "Check out the Projects section to see my portfolio!"
+  ],
+  "skills": [
+    "I work with JavaScript, C++, Python, and many other technologies!",
+    "My skills include full-stack development, game engineering, and UI/UX design.",
+    "I'm experienced in React, Vue, Node.js, and game engines like Frostbite.",
+    "I love working on both front-end and back-end development!"
+  ],
+  "contact": [
+    "You can reach me through LinkedIn, GitHub, or email!",
+    "Click the Contact button to find all my social links.",
+    "I'd love to hear from you! Check out my contact info.",
+    "Feel free to reach out - I'm always open to new opportunities!"
+  ],
+  "thanks": [
+    "You're welcome!",
+    "Happy to help!",
+    "Anytime!",
+    "My pleasure!"
+  ],
+  "positive": [
+    "That's great to hear!",
+    "Awesome!",
+    "That's wonderful!",
+    "I'm so glad!",
+    "That's fantastic!"
+  ],
+  "general": [
+    "That's interesting!",
+    "Tell me more!",
+    "I'd love to hear more about that!",
+    "Thanks for sharing!",
+    "That's cool!",
+    "Feel free to explore my portfolio using the buttons on the main screen."
+  ],
+  "goodbye": [
+    "Thanks for chatting! Feel free to explore my portfolio.",
+    "See you later! Don't forget to check out my projects!",
+    "Bye! Hope to hear from you soon!",
+    "Take care! Feel free to reach out anytime."
+  ]
+}

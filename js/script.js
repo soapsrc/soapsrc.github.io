@@ -15,9 +15,268 @@ anime.timeline({ loop: false })
         delay: (el, i) => 300 + 30 * i
     })
 
+var userAvatar = '';
+var userColor = '#FED7DA';
+var userName = '';
+var responses = {};
+var useAI = true;
+var cohereAPIKey = '4tojqOj8JlW5bKgPjr1Ju1jQDfLGszKQT3gnCz3Y';
+
+// Portfolio context for AI
+var portfolioContext = `You are Sophia, a software developer and web designer based in Canada. 
+You graduated from the University of Calgary with a computer science degree.
+You currently work as a C++ game engineer at a video game company.
+Your skills include: JavaScript, C++, Python, React, Vue, Node.js, and game engines like Frostbite.
+Your projects include: STEM data visualization, HCI research projects, and interactive UI experiments.
+You can be contacted through LinkedIn, GitHub, or email.
+Keep responses friendly, concise (2-3 sentences), and encouraging visitors to explore the portfolio.`;
+
+// Load responses from JSON file as fallback
+fetch('responses.json')
+    .then(response => response.json())
+    .then(data => {
+        responses = data;
+        console.log('Responses loaded:', responses);
+    })
+    .catch(error => {
+        console.error('Error loading responses:', error);
+        // Fallback responses if file fails to load
+        responses = {
+            "greetings": ["Hi there! Thanks for visiting!"],
+            "about": ["I'm a software developer based in Canada!"],
+            "projects": ["Check out my Projects section to see what I've built!"],
+            "skills": ["I work with JavaScript, C++, Python, and more!"],
+            "contact": ["Click the Contact button to reach me!"],
+            "thanks": ["You're welcome!"],
+            "positive": ["That's great!"],
+            "general": ["That's interesting! Tell me more!"],
+            "goodbye": ["See you later!"]
+        };
+    });
+
 function getLogin() {
     var fn = document.getElementById("fname").value;
+    if (!fn) {
+        alert('Please enter your name!');
+        return false;
+    }
+    
+    userName = fn;
+    
+    // Close login container
+    document.getElementById('login-container').classList.add('closeanimate');
+    setTimeout(function(){
+        document.getElementById('login-container').classList.remove('closeanimate');
+        document.getElementById('login-container').style.display='none';
+    }, 600);
+    
+    // Show chat container
+    setTimeout(function(){
+        document.getElementById('chat-container').style.display = 'flex';
+        
+        // Add initial message from Sophia
+        addMessage('Sophia', 'Hi there! Thanks for visiting my portfolio site. Feel free to look around and ask me any questions :)', 'sophia');
+    }, 700);
+    
+    return false;
+}
 
+function addMessage(sender, message, type) {
+    var chatMessages = document.getElementById('chat-messages');
+    var messageDiv = document.createElement('div');
+    messageDiv.className = 'chat-message ' + type;
+    
+    var avatarDiv = document.createElement('div');
+    avatarDiv.className = 'message-avatar';
+    if (type === 'sophia') {
+        avatarDiv.style.background = "url('assets/me2.png')";
+        avatarDiv.style.backgroundSize = 'cover';
+        avatarDiv.style.backgroundPosition = 'center';
+        
+        // Play notification sound for Sophia's messages
+        var chatSound = new Audio('assets/chatping.mp3');
+        chatSound.play();
+    } else {
+        avatarDiv.style.background = userAvatar;
+        avatarDiv.style.backgroundRepeat = 'no-repeat';
+        avatarDiv.style.backgroundPosition = 'center';
+        avatarDiv.style.backgroundSize = '80%';
+        avatarDiv.style.backgroundColor = userColor;
+    }
+    
+    var contentDiv = document.createElement('div');
+    contentDiv.className = 'message-content';
+    
+    var nameSpan = document.createElement('span');
+    nameSpan.className = 'message-name';
+    nameSpan.textContent = sender;
+    
+    var textDiv = document.createElement('div');
+    textDiv.className = 'message-text';
+    textDiv.textContent = message;
+    
+    contentDiv.appendChild(nameSpan);
+    contentDiv.appendChild(textDiv);
+    
+    messageDiv.appendChild(avatarDiv);
+    messageDiv.appendChild(contentDiv);
+    
+    chatMessages.appendChild(messageDiv);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+function getResponse(category) {
+    console.log('Getting response for category:', category);
+    console.log('Available responses:', responses);
+    
+    // Check if responses are loaded and category exists
+    if (responses && responses[category] && responses[category].length > 0) {
+        var randomIndex = Math.floor(Math.random() * responses[category].length);
+        var response = responses[category][randomIndex];
+        console.log('Selected response:', response);
+        return response;
+    }
+    // Fallback if responses aren't loaded yet
+    console.log('Category not found or responses not loaded:', category);
+    return "That's interesting! Tell me more!";
+}
+
+function detectCategory(message) {
+    var lowerMessage = message.toLowerCase();
+    
+    console.log('Detecting category for message:', lowerMessage);
+    
+    // Keyword detection
+    if (lowerMessage.match(/\b(hi|hello|hey|greetings|yo)\b/)) {
+        console.log('Detected: greetings');
+        return 'greetings';
+    }
+    if (lowerMessage.includes('about') || lowerMessage.includes('who are you') || 
+        lowerMessage.includes('tell me about yourself') || lowerMessage.includes('your background')) {
+        console.log('Detected: about');
+        return 'about';
+    }
+    if (lowerMessage.includes('project') || lowerMessage.includes('work') || 
+        lowerMessage.includes('portfolio') || lowerMessage.includes('built') || 
+        lowerMessage.includes('made')) {
+        console.log('Detected: projects');
+        return 'projects';
+    }
+    if (lowerMessage.includes('skill') || lowerMessage.includes('technology') || 
+        lowerMessage.includes('technologies') || lowerMessage.includes('what do you know') || 
+        lowerMessage.includes('experience')) {
+        console.log('Detected: skills');
+        return 'skills';
+    }
+    if (lowerMessage.includes('contact') || lowerMessage.includes('email') || 
+        lowerMessage.includes('reach') || lowerMessage.includes('linkedin') || 
+        lowerMessage.includes('github')) {
+        console.log('Detected: contact');
+        return 'contact';
+    }
+    if (lowerMessage.match(/\b(thank|thanks|thx)\b/)) {
+        console.log('Detected: thanks');
+        return 'thanks';
+    }
+    if (lowerMessage.match(/\b(bye|goodbye|see you|later)\b/)) {
+        console.log('Detected: goodbye');
+        return 'goodbye';
+    }
+    if (lowerMessage.match(/\b(great|awesome|amazing|cool|nice|love)\b/)) {
+        console.log('Detected: positive');
+        return 'positive';
+    }
+    
+    console.log('Detected: general');
+    return 'general';
+}
+
+function sendMessage() {
+    var input = document.getElementById('chat-input');
+    var message = input.value.trim();
+    
+    if (message) {
+        addMessage(userName, message, 'user');
+        input.value = '';
+        
+        // Show typing indicator
+        setTimeout(function() {
+            if (useAI && cohereAPIKey) {
+                // Use AI for response
+                getAIResponse(message);
+            } else {
+                // Use keyword-based responses
+                var category = detectCategory(message);
+                var sophiaResponse = getResponse(category);
+                addMessage('Sophia', sophiaResponse, 'sophia');
+            }
+        }, 1000);
+    }
+}
+
+async function getAIResponse(userMessage) {
+    console.log('Attempting AI response for:', userMessage);
+    console.log('API Key exists:', !!cohereAPIKey);
+    
+    try {
+        const response = await fetch('https://api.cohere.ai/v1/chat', {
+            method: 'POST',
+            headers: {
+                'Authorization': `Bearer ${cohereAPIKey}`,
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                model: 'command-a-03-2025',
+                preamble: portfolioContext + '\n\nRespond as Sophia in 2-3 friendly sentences.',
+                message: userMessage
+            })
+        });
+
+        console.log('API Response status:', response.status);
+
+        if (!response.ok) {
+            const errorData = await response.json();
+            console.error('AI API error:', errorData);
+            throw new Error(`AI API request failed: ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log('AI Response data:', data);
+        
+        let aiResponse = data.text || "That's interesting! Tell me more!";
+        
+        // Clean up the response
+        aiResponse = aiResponse.trim();
+        
+        // If response is too long, truncate
+        if (aiResponse.length > 300) {
+            aiResponse = aiResponse.substring(0, 297) + '...';
+        }
+        
+        console.log('Final AI response:', aiResponse);
+        addMessage('Sophia', aiResponse, 'sophia');
+    } catch (error) {
+        console.error('AI response error:', error);
+        console.log('Falling back to keyword-based response');
+        // Fallback to keyword-based response
+        var category = detectCategory(userMessage);
+        var sophiaResponse = getResponse(category);
+        addMessage('Sophia', sophiaResponse, 'sophia');
+    }
+}
+
+function clearChat() {
+    // Clear all messages
+    var chatMessages = document.getElementById('chat-messages');
+    chatMessages.innerHTML = '';
+    
+    // Close chat container with animation
+    document.getElementById('chat-container').classList.add('closeanimate');
+    setTimeout(function(){
+        document.getElementById('chat-container').classList.remove('closeanimate');
+        document.getElementById('chat-container').style.display='none';
+    }, 600);
+    document.getElementById('main-container').style.pointerEvents='auto';
 }
 
 $("button").click(function() {
@@ -27,34 +286,44 @@ $("button").click(function() {
 
     switch (val) {
         case 1:
-            document.getElementById("avatar").style.background = "url('assets/kirby.png')";
+            userAvatar = "url('assets/kirby.png')";
+            document.getElementById("avatar").style.background = userAvatar;
             break;
         case 2:
-            document.getElementById("avatar").style.background = "url('assets/kingdede.gif')";
+            userAvatar = "url('assets/kingdede.gif')";
+            document.getElementById("avatar").style.background = userAvatar;
             break;
         case 3:
-            document.getElementById("avatar").style.background = "url('assets/metaknight.gif')";
+            userAvatar = "url('assets/metaknight.gif')";
+            document.getElementById("avatar").style.background = userAvatar;
             break;
         case 4:
-            document.getElementById("avatar").style.background = "url('assets/mario.gif')";
+            userAvatar = "url('assets/mario.gif')";
+            document.getElementById("avatar").style.background = userAvatar;
             break;
         case 5:
-            document.getElementById("avatar").style.background = "url('assets/bowser.gif')";
+            userAvatar = "url('assets/bowser.gif')";
+            document.getElementById("avatar").style.background = userAvatar;
             break;
         case 6:
-            document.getElementById("avatar").style.background = "url('assets/daisy.gif')";
+            userAvatar = "url('assets/daisy.gif')";
+            document.getElementById("avatar").style.background = userAvatar;
             break;
         case 7:
-            document.getElementById("avatar").style.background = "url('assets/sonic.png')";
+            userAvatar = "url('assets/sonic.png')";
+            document.getElementById("avatar").style.background = userAvatar;
             break;
         case 8:
-            document.getElementById("avatar").style.background = "url('assets/pikachu.png')";
+            userAvatar = "url('assets/pikachu.png')";
+            document.getElementById("avatar").style.background = userAvatar;
             break;
         case 9:
-            document.getElementById("avatar").style.background = "url('assets/gengar.png')";
+            userAvatar = "url('assets/gengar.png')";
+            document.getElementById("avatar").style.background = userAvatar;
             break;
         case 10:
-            document.getElementById("avatar").style.background = "url('assets/jira.png')";
+            userAvatar = "url('assets/jira.png')";
+            document.getElementById("avatar").style.background = userAvatar;
             break;
         case 11:
             document.getElementById('resume-container').style.display = 'block';
@@ -81,6 +350,18 @@ $("button").click(function() {
     document.getElementById("avatar").style.backgroundColor = "#FED7DA";
 
 
+});
+
+// Allow sending message with Enter key
+document.addEventListener('DOMContentLoaded', function() {
+    var chatInput = document.getElementById('chat-input');
+    if (chatInput) {
+        chatInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+    }
 });
 
 var colorWell;
